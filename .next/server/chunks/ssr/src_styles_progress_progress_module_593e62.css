@@ -1,0 +1,179 @@
+/* [project]/src/styles/progress/progress.module.css [app-client] (css) */
+.progress-module__uNuYtW__progress {
+  position: relative;
+}
+
+.progress-module__uNuYtW__progressArea {
+  margin-top: 4rem;
+}
+
+.progress-module__uNuYtW__progressBox {
+  display: flex;
+  position: relative;
+}
+
+.progress-module__uNuYtW__progressBox .progress-module__uNuYtW__textarea, .progress-module__uNuYtW__progressBox .progress-module__uNuYtW__imgarea {
+  padding: 5rem 0;
+}
+
+@media screen and (height >= 880px) {
+  .progress-module__uNuYtW__progressBox .progress-module__uNuYtW__textarea, .progress-module__uNuYtW__progressBox .progress-module__uNuYtW__imgarea {
+    padding: 6vw 0 10vw;
+  }
+}
+
+.progress-module__uNuYtW__progressBox .progress-module__uNuYtW__textarea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-module__uNuYtW__progressBox .progress-module__uNuYtW__textarea .progress-module__uNuYtW__progressYear p {
+  font-size: var(--fz64);
+  text-align: right;
+  color: var(--pointColorOrange);
+}
+
+.progress-module__uNuYtW__progressBox .progress-module__uNuYtW__textarea .progress-module__uNuYtW__progressBuilding {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  height: 100%;
+}
+
+.progress-module__uNuYtW__progressBox .progress-module__uNuYtW__textarea .progress-module__uNuYtW__progressBuilding:after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #d6d6d6;
+}
+
+.progress-module__uNuYtW__progressBox .progress-module__uNuYtW__textarea .progress-module__uNuYtW__progressBuilding:before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #d6d6d6;
+}
+
+.progress-module__uNuYtW__progressBox .progress-module__uNuYtW__textarea .progress-module__uNuYtW__progressBuilding p {
+  text-align: right;
+}
+
+.progress-module__uNuYtW__progressBox .progress-module__uNuYtW__textarea .progress-module__uNuYtW__progressBuilding p:first-of-type {
+  font-size: var(--fz24);
+  font-weight: 600;
+  color: var(--pointColorOrange);
+}
+
+.progress-module__uNuYtW__progressBox .progress-module__uNuYtW__textarea .progress-module__uNuYtW__progressBuilding p:last-of-type {
+  margin-bottom: 1rem;
+  background-color: var(--pointColorOrange);
+  color: #fff;
+  padding: .5rem 1.5rem;
+  box-sizing: border-box;
+}
+
+.progress-module__uNuYtW__progressBox .progress-module__uNuYtW__imgarea {
+  display: flex;
+  flex: 1;
+}
+
+.progress-module__uNuYtW__progressBox .progress-module__uNuYtW__imgarea .progress-module__uNuYtW__imgareaText {
+  writing-mode: vertical-rl;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--pointColorOrange);
+}
+
+.progress-module__uNuYtW__progressBox .progress-module__uNuYtW__imgarea .progress-module__uNuYtW__imgareaText span:nth-child(2) {
+  height: 100%;
+  width: 1px;
+  flex: 1;
+  background-color: var(--pointColorOrange);
+  margin: 1rem 0;
+}
+
+.progress-module__uNuYtW__progressBox .progress-module__uNuYtW__progressbar {
+  width: 25px;
+  margin: 0 4rem;
+  background-color: #ffecdb;
+}
+
+.progress-module__uNuYtW__progressBox .progress-module__uNuYtW__bottomText {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.progress-module__uNuYtW__progressBox .progress-module__uNuYtW__bottomText p {
+  white-space: nowrap;
+  font-size: min(10.1vw, 16rem);
+  color: #ffefe7;
+}
+
+.progress-module__uNuYtW__progressBox {
+  display: flex;
+  position: relative;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.progress-module__uNuYtW__progressBox:hover {
+  transform: translateY(-5px);
+}
+
+.progress-module__uNuYtW__progressbar {
+  width: 25px;
+  background-color: #ffecdb;
+  transition: width 1.5s ease-in-out;
+}
+
+.progress-module__uNuYtW__imgarea figure {
+  overflow: hidden;
+}
+
+.progress-module__uNuYtW__imgarea figure img {
+  transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+  object-fit: cover;
+  width: 100%;
+}
+
+.progress-module__uNuYtW__imgarea:hover figure img {
+  transform: scale(1.05);
+}
+
+@media screen and (width <= 640px) {
+  .progress-module__uNuYtW__progressBox {
+    flex-direction: column;
+  }
+
+  .progress-module__uNuYtW__progressBox .progress-module__uNuYtW__textarea, .progress-module__uNuYtW__progressBox .progress-module__uNuYtW__imgarea {
+    padding-top: 0;
+  }
+
+  .progress-module__uNuYtW__progressBox .progress-module__uNuYtW__textarea .progress-module__uNuYtW__progressBuilding p, .progress-module__uNuYtW__progressBox .progress-module__uNuYtW__textarea .progress-module__uNuYtW__progressYear p {
+    text-align: left;
+  }
+
+  .progress-module__uNuYtW__progressBox .progress-module__uNuYtW__textarea .progress-module__uNuYtW__progressBuilding {
+    align-items: flex-start;
+  }
+
+  .progress-module__uNuYtW__progressBox .progress-module__uNuYtW__imgarea {
+    justify-content: flex-end;
+  }
+
+  .progress-module__uNuYtW__progressBox .progress-module__uNuYtW__bottomText {
+    z-index: 1;
+  }
+
+  .progress-module__uNuYtW__progressBox .progress-module__uNuYtW__bottomText p {
+    font-size: min(14vw, 16rem);
+  }
+}
+
+
+/*# sourceMappingURL=src_styles_progress_progress_module_593e62.css.map*/

@@ -1,0 +1,211 @@
+@media screen and (min-width: 769px) {
+  .sectionSP {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sectionPC {
+    display: none;
+  }
+}
+.history {
+  position: relative;
+  overflow: hidden;
+}
+.titlePC {
+  position: absolute;
+  top: 9vw;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+.year2015,
+.year2016,
+.year2017,
+.year2018,
+.year2019,
+.year2020,
+.year2021,
+.year2022,
+.year2023 {
+  flex-shrink: 0;
+}
+.year2015 {
+  min-width: 38vw;
+}
+.year2016 {
+  min-width: 30vw;
+}
+.year2017 {
+  min-width: 30vw;
+}
+.year2018 {
+  min-width: 35vw;
+}
+.year2019 {
+  min-width: 50vw;
+}
+.year2020 {
+  min-width: 48vw;
+}
+.year2021 {
+  min-width: 30vw;
+}
+.year2022 {
+  min-width: 48vw;
+}
+.year2023 {
+  min-width: 55vw;
+}
+.historyArea {
+  display: flex;
+  align-items: flex-start;
+  min-height: 230px;
+}
+.historyArea.up {
+  border-bottom: 5px solid var(--pointColorBlue);
+}
+.historybox {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 4rem;
+  padding-left: 2rem;
+  box-sizing: border-box;
+  position: relative;
+  height: 100%;
+}
+.historybox .maruten {
+  border: 5px solid var(--pointColorBlue);
+  background-color: #fff;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  left: -13px;
+  bottom: -16px;
+  z-index: 1;
+}
+.historyArea.down .historybox .maruten {
+  bottom: auto;
+  top: -16px;
+}
+.historyArea.down .historybox {
+  align-items: flex-end;
+  padding-bottom: 0;
+  padding-top: 4rem;
+}
+.historybox::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-left: 5px dashed #b9c7dd;
+  height: 100%;
+}
+.historybox::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  width: 17px;
+  height: 17px;
+  background-color: #b9c7dd;
+  border-radius: 50%;
+}
+.historyArea.up .historybox::after {
+  bottom: 0;
+  top: auto;
+}
+.historyArea.down .historybox::before {
+  top: auto;
+  bottom: -5px;
+}
+.year2015 .historyArea.down {
+  margin-left: 12vw;
+}
+.year2019 .historyArea.up {
+  padding-left: 21vw;
+}
+.historybox img {
+  max-height: 20vh;
+  margin-left: 1rem;
+  margin-right: 6rem;
+}
+.yearImg img {
+  max-width: 300px;
+  width: 16vw;
+}
+.textArea .month {
+  font-size: var(--fz36);
+  font-weight: 600;
+  color: var(--pointColorBlue);
+}
+.textArea .month span {
+  font-size: var(--fz16);
+}
+.textArea .text {
+  color: #275aa9;
+  line-height: 1.2;
+}
+@media screen and (max-width: 820px) {
+  .yearImg img {
+    max-width: 300px;
+    width: 25vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .yearImg img {
+    max-width: 280px;
+    width: 100%;
+  }
+  .containerSP {
+    position: relative;
+  }
+  .historyAreaSP {
+    margin: 4rem 0;
+    padding-left: 3rem;
+    border-left: 5px solid var(--pointColorBlue);
+  }
+  .historyboxSP {
+    position: relative;
+  }
+  .historyboxSP .maruten {
+    border: 5px solid var(--pointColorBlue);
+    background-color: #fff;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: -47px;
+    top: 13px;
+    z-index: 1;
+  }
+  .historyImagBox {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .year2016SP,
+  .year2017SP,
+  .year2018SP,
+  .year2019SP,
+  .year2020SP,
+  .year2021SP,
+  .year2022SP,
+  .year2023SP,
+  .year2024SP {
+    margin-top: 8rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .historyImagBox img {
+    width: 70%;
+  }
+  .textArea .month {
+    font-size: 4rem;
+  }
+  .textArea .month span {
+    font-size: var(--fz28);
+  }
+  .textArea .text {
+    font-size: var(--fz24);
+  }
+}

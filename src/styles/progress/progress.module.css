@@ -1,0 +1,163 @@
+.progress {
+  position: relative;
+  height: 100vh;
+}
+.progressArea {
+  margin-top: 4rem;
+}
+.progressBox {
+  display: flex;
+  position: relative;
+}
+.progressBox .textarea,
+.progressBox .imgarea {
+  padding: 5rem 0;
+}
+@media screen and (min-height: 880px) {
+  .progressBox .textarea,
+  .progressBox .imgarea {
+    padding: 6vw 0 10vw;
+  }
+}
+.progressBox .textarea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.progressBox .textarea .progressYear p {
+  font-size: var(--fz64);
+  text-align: right;
+  color: var(--pointColorOrange);
+}
+.progressBox .textarea .progressBuilding {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  height: 100%;
+}
+.progressBox .textarea .progressBuilding:after {
+  content: '';
+  width: 1px;
+  height: 100%;
+  background-color: #d6d6d6;
+}
+.progressBox .textarea .progressBuilding::before {
+  content: '';
+  width: 1px;
+  height: 100%;
+  background-color: #d6d6d6;
+}
+.progressBox .textarea .progressBuilding p {
+  text-align: right;
+}
+.progressBox .textarea .progressBuilding p:first-of-type {
+  font-size: var(--fz24);
+  font-weight: 600;
+  color: var(--pointColorOrange);
+}
+.progressBox .textarea .progressBuilding p:last-of-type {
+  margin-bottom: 1rem;
+  background-color: var(--pointColorOrange);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  box-sizing: border-box;
+}
+.progressBox .imgarea {
+  display: flex;
+  flex: 1;
+}
+.progressBox .imgarea .imgareaText {
+  writing-mode: vertical-rl;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--pointColorOrange);
+}
+.progressBox .imgarea .imgareaText span:nth-child(2) {
+  height: 100%;
+  width: 1px;
+  flex: 1;
+  background-color: var(--pointColorOrange);
+  margin: 1rem 0;
+}
+.progressBox .progressbar {
+  width: 25px;
+  margin: 0 4rem;
+  background-color: #ffecdb;
+}
+.progressBox .bottomText {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.progressBox .bottomText p {
+  white-space: nowrap;
+  font-size: min(10.1vw, 16rem);
+  color: #ffefe7;
+}
+.progressBox {
+  display: flex;
+  position: relative;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.progressBox:hover {
+  transform: translateY(-5px);
+}
+.progressbar {
+  width: 25px;
+  background-color: #ffecdb;
+  transition: width 1.5s ease-in-out;
+}
+.imgarea figure {
+  overflow: hidden;
+  width: 80%;
+}
+.imgarea figure img {
+  transition:
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+  object-fit: cover;
+  /* width: 100%; */
+}
+.imgarea:hover figure img {
+  transform: scale(1.05);
+}
+@media screen and (max-width: 640px) {
+  .progressBox {
+    flex-direction: column;
+  }
+  .progressBox .textarea,
+  .progressBox .imgarea {
+    padding-top: 0;
+  }
+  .progressBox .textarea .progressBuilding p,
+  .progressBox .textarea .progressYear p {
+    text-align: left;
+  }
+  .progressBox .textarea .progressBuilding {
+    align-items: flex-start;
+  }
+  .progressBox .imgarea {
+    justify-content: flex-end;
+  }
+  .progressBox .bottomText {
+    z-index: 1;
+  }
+  .progressBox .bottomText p {
+    font-size: min(14vw, 16rem);
+  }
+
+  .progress {
+    height: auto; /* 중요 */
+    min-height: calc(100vh + 400px); /* 또는 충분한 여백을 줄 수 있음 */
+    padding: 4rem 0; /* 원하는 만큼 여백 */
+  }
+  .progressArea {
+    margin-top: 0rem;
+  }
+}

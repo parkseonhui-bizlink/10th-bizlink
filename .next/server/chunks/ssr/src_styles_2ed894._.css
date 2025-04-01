@@ -1,0 +1,18 @@
+/* [project]/src/styles/history/history.css [app-client] (css) */
+.container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  width: auto;
+}
+
+
+/* [project]/src/styles/mv.css [app-client] (css) */
+.mv {
+  min-height: 100vh;
+  background: var(--gradeBG);
+}
+
+
+/*# sourceMappingURL=src_styles_2ed894._.css.map*/

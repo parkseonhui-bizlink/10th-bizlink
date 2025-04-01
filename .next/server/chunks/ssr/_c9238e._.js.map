@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/ps/Desktop/work/corporate10/src/app/components/common/Header.tsx"],"sourcesContent":["import React from 'react'\n\nconst Header = () => {\n  return <div>Header</div>\n}\n\nexport default Header\n"],"names":[],"mappings":";;;;;AAEA,MAAM,SAAS;IACb,qBAAO,8OAAC;kBAAI;;;;;;AACd;uCAEe"}},
+    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":["file:///Users/ps/Desktop/work/corporate10/src/app/components/common/Footer.tsx"],"sourcesContent":["import React from 'react'\n\nconst Footer = () => {\n  return <div>Footer</div>\n}\n\nexport default Footer\n"],"names":[],"mappings":";;;;;AAEA,MAAM,SAAS;IACb,qBAAO,8OAAC;kBAAI;;;;;;AACd;uCAEe"}},
+    {"offset": {"line": 43, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 49, "column": 0}, "map": {"version":3,"sources":["file:///Users/ps/Desktop/work/corporate10/src/app/layout.tsx"],"sourcesContent":["import type { Metadata } from 'next'\nimport './globals.css'\nimport './styles/reset.css'\nimport Header from './components/common/Header'\nimport Footer from './components/common/Footer'\n\nexport const metadata: Metadata = {\n  title: 'コーポレートサイト',\n  description: 'コーポレートサイト',\n}\n\nexport default function RootLayout({\n  children,\n}: Readonly<{\n  children: React.ReactNode\n}>) {\n  return (\n    <html lang=\"ja\">\n      <Header />\n      <body>{children}</body>\n      <Footer />\n    </html>\n  )\n}\n"],"names":[],"mappings":";;;;;AAGA;AACA;;;;;;AAEO,MAAM,WAAqB;IAChC,OAAO;IACP,aAAa;AACf;AAEe,SAAS,WAAW,EACjC,QAAQ,EAGR;IACA,qBACE,8OAAC;QAAK,MAAK;;0BACT,8OAAC,6IAAA,CAAA,UAAM;;;;;0BACP,8OAAC;0BAAM;;;;;;0BACP,8OAAC,6IAAA,CAAA,UAAM;;;;;;;;;;;AAGb"}},
+    {"offset": {"line": 93, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 104, "column": 0}, "map": {"version":3,"sources":["file:///Users/ps/Desktop/work/corporate10/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = require('../../module.compiled').vendored[\n  'react-rsc'\n].ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":";AAAAA,OAAOC,OAAO,GAAGC,QAAQ,0HAAyBC,QAAQ,CACxD,YACD,CAACC,kBAAkB","ignoreList":[0]}},
+    {"offset": {"line": 106, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

@@ -1,0 +1,236 @@
+/* [project]/src/styles/common/common.css [app-client] (css) */
+:root {
+  --gradeBG: linear-gradient(135deg, #06f, #ff7800);
+  --pointColorOrange: #ff7800;
+  --pointColorBlue: #06f;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+}
+
+.sec {
+  padding: 16rem 0 7rem;
+  position: relative;
+}
+
+.sec.formtheceo {
+  padding: 16rem 0;
+}
+
+.sec.formtheceo .secInner {
+  position: relative;
+}
+
+.sec.formtheceo .secInner .titleImg {
+  position: absolute;
+  left: 0;
+  top: -163px;
+}
+
+.sec.formtheceo .secInner .titleImg img {
+  width: 100%;
+  height: 280px;
+}
+
+.sec.message .secTitle {
+  margin-top: 2rem;
+  background: linear-gradient(90deg, #ff6a00, #005eff);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.sec.message .secTitleNum {
+  display: flex;
+  align-items: flex-end;
+}
+
+.sec.message span {
+  display: flex;
+  font-size: var(--fz32);
+  font-weight: 500;
+  color: var(--pointColorBlue);
+}
+
+.sec.message .secTitleNum p {
+  line-height: 1;
+  font-size: var(--fz128);
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff6a00, #005eff);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.sec.message .secTitleNum:after {
+  content: "";
+  flex-grow: 1;
+  height: .5px;
+  background-color: #656565;
+  margin-right: 20px;
+}
+
+.sec.blue {
+  background-color: #f2f7ff;
+}
+
+.sec.grdeBlue {
+  background: linear-gradient(0deg, #333, #06f);
+}
+
+.sec .secInner {
+  max-width: 980px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sec .secTitle {
+  font-size: var(--fz24);
+  font-weight: 600;
+  color: var(--pointColorOrange);
+  position: relative;
+}
+
+.sec.blue .secTitle {
+  color: var(--pointColorBlue);
+}
+
+.sec.formtheceo .secTitle {
+  color: #fff;
+}
+
+.sec.formtheceo h3 {
+  color: #fff;
+  font-weight: 600;
+  font-size: var(--fz24);
+}
+
+.sec.formtheceo p {
+  color: #fff;
+  font-size: var(--fz18);
+}
+
+.titleArea {
+  position: relative;
+  width: 100%;
+}
+
+.titleArea img {
+  display: flex;
+  max-height: 200px;
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  width: auto;
+}
+
+.panel {
+  top: 4.56vw;
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.barWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 230px;
+  align-items: center;
+  justify-content: flex-end;
+  width: 16.6667%;
+}
+
+.bar {
+  max-width: 50px;
+  width: 100%;
+  height: 1px;
+  background-color: #e7e7e7;
+  transition: height 1.5s ease-out;
+}
+
+.barWrapper:last-child .bar {
+  background-color: var(--pointColorBlue);
+}
+
+.gradientBg {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: .3;
+  z-index: -1;
+}
+
+.gradientTop, .gradientBottom {
+  position: absolute;
+  z-index: 2;
+}
+
+.blue .gradientTop {
+  background: radial-gradient(circle, #09f, #0000);
+}
+
+.gradientTop {
+  width: 500px;
+  height: 500px;
+  top: -100px;
+  left: calc(50% - 600px);
+  transform: translateX(-50%);
+  background: radial-gradient(circle, #ff7800, #0000);
+}
+
+.blue .gradientBottom {
+  background: radial-gradient(circle, #09f, #0000);
+}
+
+.gradientBottom {
+  width: 250px;
+  height: 250px;
+  bottom: 100px;
+  left: calc(50% + 600px);
+  transform: translateX(-50%);
+  background: radial-gradient(circle, #ff7800, #0000);
+}
+
+.bubblesContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, #09f, #0000);
+  border-radius: 50%;
+  opacity: .3;
+  filter: blur(10px);
+}
+
+/*# sourceMappingURL=src_styles_common_common_b52d8e.css.map*/

@@ -1,0 +1,362 @@
+/* [project]/src/styles/history/history.css [app-client] (css) */
+.container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  width: auto;
+}
+
+.titleArea {
+  position: absolute;
+  top: 9vw;
+}
+
+.titleArea img {
+  max-width: 500px;
+  width: 30vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.panel {
+  top: 4.56vw;
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.panel.yeaer2015 {
+  width: 55vw;
+}
+
+.panel.yeaer2016 {
+  width: 30vw;
+}
+
+.panel.yeaer2017 {
+  width: 30vw;
+}
+
+.panel.yeaer2018 {
+  width: 35vw;
+}
+
+.panel.yeaer2019 {
+  width: 50vw;
+}
+
+.panel.yeaer2020 {
+  width: 60vw;
+}
+
+.yeaer2021 {
+  width: 30vw;
+}
+
+.yeaer2022 {
+  width: 55vw;
+}
+
+.yeaer2023 {
+  width: 55vw;
+}
+
+.historyArea {
+  display: flex;
+  align-items: flex-start;
+  min-height: 230px;
+}
+
+.historyArea.up {
+  border-bottom: 5px solid var(--pointColorBlue);
+}
+
+.historybox {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 4rem;
+  padding-left: 2rem;
+  box-sizing: border-box;
+  position: relative;
+  height: 100%;
+}
+
+.historybox .maruten {
+  border: 5px solid var(--pointColorBlue);
+  background-color: #fff;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  left: -13px;
+  bottom: -16px;
+  z-index: 1;
+}
+
+.historyArea.down .historybox .maruten {
+  bottom: auto;
+  top: -16px;
+}
+
+.historyArea.down .historybox {
+  align-items: flex-end;
+  padding-bottom: 0;
+  padding-top: 4rem;
+}
+
+.historybox:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-left: 5px dashed #b9c7dd;
+  height: 100%;
+}
+
+.historybox:before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  width: 17px;
+  height: 17px;
+  background-color: #b9c7dd;
+  border-radius: 50%;
+}
+
+.historyArea.up .historybox:after {
+  bottom: 0;
+  top: auto;
+}
+
+.historyArea.down .historybox:after {
+}
+
+.historyArea.down .historybox:before {
+  top: auto;
+  bottom: -5px;
+}
+
+.yeaer2015 .historyArea.down {
+  margin-left: 12vw;
+}
+
+.yeaer2019 .historyArea.up {
+  padding-left: 21vw;
+}
+
+.historybox img {
+  max-height: 20vh;
+  margin-left: 1rem;
+  margin-right: 6rem;
+}
+
+.yearImg img {
+  max-width: 300px;
+  width: 16vw;
+}
+
+.textArea .month {
+  font-size: var(--fz36);
+  font-weight: 600;
+  color: var(--pointColorBlue);
+}
+
+.textArea .month span {
+  font-size: var(--fz16);
+}
+
+.textArea .text {
+  color: #275aa9;
+  line-height: 1.2;
+}
+
+
+/* [project]/src/styles/history/historylist.css [app-client] (css) */
+.titleArea {
+  position: absolute;
+  top: 9vw;
+}
+
+.titleArea img {
+  max-width: 500px;
+  width: 30vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.panel {
+  top: 4.56vw;
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.panel.yeaer2015 {
+  width: 55vw;
+}
+
+.panel.yeaer2016 {
+  width: 30vw;
+}
+
+.panel.yeaer2017 {
+  width: 30vw;
+}
+
+.panel.yeaer2018 {
+  width: 35vw;
+}
+
+.panel.yeaer2019 {
+  width: 50vw;
+}
+
+.panel.yeaer2020 {
+  width: 60vw;
+}
+
+.yeaer2021 {
+  width: 30vw;
+}
+
+.yeaer2022 {
+  width: 55vw;
+}
+
+.yeaer2023 {
+  width: 55vw;
+}
+
+.historyArea {
+  display: flex;
+  align-items: flex-start;
+  min-height: 230px;
+}
+
+.historyArea.up {
+  border-bottom: 5px solid var(--pointColorBlue);
+}
+
+.historybox {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 4rem;
+  padding-left: 2rem;
+  box-sizing: border-box;
+  position: relative;
+  height: 100%;
+}
+
+.historybox .maruten {
+  border: 5px solid var(--pointColorBlue);
+  background-color: #fff;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  left: -13px;
+  bottom: -16px;
+  z-index: 1;
+}
+
+.historyArea.down .historybox .maruten {
+  bottom: auto;
+  top: -16px;
+}
+
+.historyArea.down .historybox {
+  align-items: flex-end;
+  padding-bottom: 0;
+  padding-top: 4rem;
+}
+
+.historybox:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-left: 5px dashed #b9c7dd;
+  height: 100%;
+}
+
+.historybox:before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  width: 17px;
+  height: 17px;
+  background-color: #b9c7dd;
+  border-radius: 50%;
+}
+
+.historyArea.up .historybox:after {
+  bottom: 0;
+  top: auto;
+}
+
+.historyArea.down .historybox:after {
+}
+
+.historyArea.down .historybox:before {
+  top: auto;
+  bottom: -5px;
+}
+
+.yeaer2015 .historyArea.down {
+  margin-left: 12vw;
+}
+
+.yeaer2019 .historyArea.up {
+  padding-left: 21vw;
+}
+
+.historybox img {
+  max-height: 20vh;
+  margin-left: 1rem;
+  margin-right: 6rem;
+}
+
+.yearImg img {
+  max-width: 300px;
+  width: 16vw;
+}
+
+.textArea .month {
+  font-size: var(--fz36);
+  font-weight: 600;
+  color: var(--pointColorBlue);
+}
+
+.textArea .month span {
+  font-size: var(--fz16);
+}
+
+.textArea .text {
+  color: #275aa9;
+  line-height: 1.2;
+}
+
+
+/* [project]/src/styles/mv.css [app-client] (css) */
+.mv {
+  min-height: 100vh;
+  background: var(--gradeBG);
+}
+
+
+/*# sourceMappingURL=src_styles_6c9add._.css.map*/

@@ -1,0 +1,43 @@
+/* [project]/src/styles/message/message.module.css [app-client] (css) */
+.message-module__-1n1CW__message {
+  position: relative;
+  overflow: hidden;
+  background: none;
+}
+
+.message-module__-1n1CW__num {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.message-module__-1n1CW__num p {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.message-module__-1n1CW__messageBox {
+  padding: 6rem 0 4rem;
+}
+
+.message-module__-1n1CW__messageBox p {
+  font-size: var(--fz20);
+  line-height: 2.5;
+  text-align: center;
+  position: relative;
+}
+
+.message-module__-1n1CW__messageBox p:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("/images/section/MESSAGE.svg") no-repeat;
+  background-size: 100% 100%;
+  width: 80%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=src_styles_message_message_module_b52d8e.css.map*/

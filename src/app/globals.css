@@ -1,0 +1,27 @@
+@import url('https://use.typekit.net/whe2ynk.css');
+/* Regular */
+.bunyan-regular {
+  font-family: 'bunyan-pro', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Italic */
+.bunyan-italic {
+  font-family: 'bunyan-pro', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+/* Bold */
+.bunyan-bold {
+  font-family: 'bunyan-pro', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Bold Italic */
+.bunyan-bold-italic {
+  font-family: 'bunyan-pro', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}

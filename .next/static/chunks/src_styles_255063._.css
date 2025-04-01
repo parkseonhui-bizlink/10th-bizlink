@@ -1,0 +1,14 @@
+/* [project]/src/styles/mv.css [app-client] (css) */
+.mv {
+  min-height: 100vh;
+  background: var(--gradeBG);
+}
+
+
+/* [project]/src/styles/progress/progress.css [app-client] (css) */
+.progress {
+  position: relative;
+}
+
+
+/*# sourceMappingURL=src_styles_255063._.css.map*/

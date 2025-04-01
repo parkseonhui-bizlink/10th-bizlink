@@ -21,9 +21,7 @@ jobs:
         run: npm ci
 
       - name: Build and Export
-        run: |
-          npm run build
-          npx next export
+        run: npm run build
 
       - name: Upload to S3
         run: |

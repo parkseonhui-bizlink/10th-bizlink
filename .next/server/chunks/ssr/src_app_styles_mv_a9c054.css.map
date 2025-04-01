@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/ps/Desktop/work/corporate10/src/app/styles/mv.css"],"sourcesContent":[".mv {\n  min-height: 100vh;\n  background: linear-gradient(135deg, #0066ff, #ff7800);\n}\n"],"names":[],"mappings":"AAAA"}},
-    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

@@ -1,9 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/ps/Desktop/work/corporate10/src/styles/history/history.css"],"sourcesContent":[".container {\n  position: relative;\n  height: 100vh;\n  display: flex;\n  flex-wrap: nowrap;\n  width: auto;\n}\n"],"names":[],"mappings":"AAAA"}},
-    {"offset": {"line": 8, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
-    {"offset": {"line": 11, "column": 0}, "map": {"version":3,"sources":["file:///Users/ps/Desktop/work/corporate10/src/styles/mv.css"],"sourcesContent":[".mv {\n  min-height: 100vh;\n  background: var(--gradeBG);\n}\n"],"names":[],"mappings":"AAAA"}},
-    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

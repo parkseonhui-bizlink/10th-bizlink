@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/ps/Desktop/work/corporate10/src/styles/fromTheCeo/fromTheCeo.module.css"],"sourcesContent":[".videoarea {\n  margin-top: 4rem;\n}\n.videoarea img {\n  width: 100%;\n  height: auto;\n}\n"],"names":[],"mappings":"AAAA;;;;AAGA"}},
-    {"offset": {"line": 9, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

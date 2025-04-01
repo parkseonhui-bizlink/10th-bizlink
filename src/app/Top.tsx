@@ -178,9 +178,9 @@ const Top = () => {
   return (
     <section>
       <FV />
-      {/* <Message /> */}
-      {/* <History ref={historyRef} spRef={historySPRef} /> */}
-      {/* <Progress ref={progressRef} activeIndex={activeIndex} /> */}
+      <Message />
+      <History ref={historyRef} spRef={historySPRef} />
+      <Progress ref={progressRef} activeIndex={activeIndex} />
       <Numbers ref={numbersRef} />
       <FromTheCeo />
     </section>

@@ -35,7 +35,7 @@ const Numbers = ({ ref }: { ref?: React.Ref<HTMLDivElement> }) => {
   const topGradientRef = useRef(null)
   const bottomGradientRef = useRef(null)
 
-  const renderCustomizedLabel =  ({
+  const renderCustomizedLabel = ({
     cx,
     cy,
     midAngle,

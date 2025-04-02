@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import styles from '@/styles/progress/progress.module.css'
 import Image from 'next/image'
 import gsap from 'gsap'
@@ -11,7 +11,34 @@ const Progress = ({
   activeIndex: number
   ref?: React.Ref<HTMLDivElement>
 }) => {
+  const [isClient, setIsClient] = useState(false)
   const progressBoxRef = useRef<HTMLDivElement | null>(null)
+  const topGradientRef = useRef(null)
+  const bottomGradientRef = useRef(null)
+
+  useEffect(() => {
+    gsap.to(topGradientRef.current, {
+      y: 100,
+      ease: 'power1.out',
+      scrollTrigger: {
+        trigger: topGradientRef.current,
+        start: 'top top',
+        end: 'bottom top',
+        scrub: 1.5,
+      },
+    })
+
+    gsap.to(bottomGradientRef.current, {
+      y: -100,
+      ease: 'power1.out',
+      scrollTrigger: {
+        trigger: bottomGradientRef.current,
+        start: 'top top',
+        end: 'bottom top',
+        scrub: 1.5,
+      },
+    })
+  }, [])
 
   const years = [
     '2015.4-2016.8',
@@ -65,6 +92,7 @@ const Progress = ({
   ]
 
   const validIndex = Math.max(0, Math.min(activeIndex, images.length - 1))
+  const totalSteps = 8
 
   useEffect(() => {
     if (!progressBoxRef.current) return
@@ -116,16 +144,89 @@ const Progress = ({
     }
   }, [validIndex])
 
+  const generateBubbles = (count: number) => {
+    const colors = ['rgb(255, 149, 55)', 'rgb(255, 203, 157)']
+
+    return new Array(count).fill(0).map((_, i) => {
+      const side = Math.random()
+      const left =
+        side < 0.4
+          ? Math.random() * 20
+          : side > 0.6
+            ? 80 + Math.random() * 20
+            : Math.random() * 100
+
+      const top = Math.random() * 100
+      const size = 5 + Math.random() * 50 // 10px ~ 40px
+      const opacity = 0.1 + Math.random() * 0.4
+      const color = colors[Math.floor(Math.random() * colors.length)]
+
+      return (
+        <div
+          key={i}
+          className="bubble"
+          style={{
+            top: `${top}%`,
+            left: `${left}%`,
+            width: `${size}px`,
+            height: `${size}px`,
+            background: `radial-gradient(circle, ${color}, transparent)`,
+            opacity,
+          }}
+        />
+      )
+    })
+  }
+  useEffect(() => {
+    const bubbles = gsap.utils.toArray('.bubble')
+    bubbles.forEach((bubble: any) => {
+      gsap.to(bubble, {
+        x: () => gsap.utils.random(-100, 100),
+        y: () => gsap.utils.random(-100, 100),
+        duration: gsap.utils.random(4, 10),
+        repeat: -1,
+        yoyo: true,
+        ease: 'sine.inOut',
+      })
+    })
+  }, [])
+
+  useEffect(() => {
+    if (!progressBoxRef.current) return
+
+    const progressBarInner = progressBoxRef.current.querySelector(
+      `.${styles.progressbarInner}`
+    ) as HTMLElement
+
+    if (progressBarInner) {
+      gsap.fromTo(
+        progressBarInner,
+        { height: '0%' },
+        {
+          height: '100%',
+          ease: 'none',
+          scrollTrigger: {
+            trigger: progressBoxRef.current,
+            start: 'top top',
+            end: `+=${totalSteps * window.innerHeight}px`,
+            scrub: true,
+          },
+        }
+      )
+    }
+  }, [])
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
   return (
     <section className={`sec progress ${styles.progress}`} ref={ref}>
-      <div
-        // ref={topGradientRef}
-        className="gradientBg gradientTop"
-      />
-      <div
-        // ref={bottomGradientRef}
-        className="gradientBg gradientBottom"
-      />
+      {isClient && (
+        <div className="bubblesContainer">{generateBubbles(10)}</div>
+      )}
+      <div ref={topGradientRef} className="gradientBg gradientTop" />
+      <div ref={bottomGradientRef} className="gradientBg gradientBottom" />
       <section className="secInner">
         <div className="titleArea">
           <Image
@@ -150,7 +251,9 @@ const Progress = ({
                 <p className="progressSubtitle">{subtitles[validIndex]}</p>
               </div>
             </div>
-            <div className={styles.progressbar}></div>
+            <div className={styles.progressbar}>
+              <div className={styles.progressbarInner}></div>
+            </div>
             <div className={`imgarea ${styles.imgarea}`}>
               <figure>
                 <Image

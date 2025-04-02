@@ -81,11 +81,7 @@
   background-color: var(--pointColorOrange);
   margin: 1rem 0;
 }
-.progressBox .progressbar {
-  width: 25px;
-  margin: 0 4rem;
-  background-color: #ffecdb;
-}
+
 .progressBox .bottomText {
   position: absolute;
   bottom: 0;
@@ -110,8 +106,25 @@
 }
 .progressbar {
   width: 25px;
+  margin: 0 4rem;
   background-color: #ffecdb;
   transition: width 1.5s ease-in-out;
+}
+.progressbar {
+  width: 25px;
+  margin: 0 4rem;
+  background-color: #ffecdb;
+  position: relative;
+  overflow: hidden;
+}
+
+.progressbarInner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--pointColorOrange);
+  height: 0%;
 }
 .imgarea figure {
   overflow: hidden;
@@ -153,9 +166,9 @@
   }
 
   .progress {
-    height: auto; /* 중요 */
-    min-height: calc(100vh + 400px); /* 또는 충분한 여백을 줄 수 있음 */
-    padding: 4rem 0; /* 원하는 만큼 여백 */
+    height: auto;
+    min-height: calc(100vh + 400px);
+    padding: 4rem 0;
   }
   .progressArea {
     margin-top: 0rem;

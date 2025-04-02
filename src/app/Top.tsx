@@ -177,9 +177,9 @@ const Top = () => {
 
   return (
     <section>
-      {/* <FV />
+      <FV />
       <Message />
-      <History ref={historyRef} spRef={historySPRef} /> */}
+      <History ref={historyRef} spRef={historySPRef} />
       <Progress ref={progressRef} activeIndex={activeIndex} />
       <Numbers ref={numbersRef} />
       <FromTheCeo />

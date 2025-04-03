@@ -9,9 +9,24 @@
   object-fit: cover;
   border-radius: 12px;
   display: block;
+  position: relative;
 }
-
+.videoarea a {
+  position: relative;
+  display: block;
+}
 .videoarea img {
   width: 100%;
   height: auto;
+}
+.videoarea a .arrowImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100px;
+  transition: all 0.4s;
+}
+.videoarea a:hover .arrowImg {
+  max-width: 120px;
 }

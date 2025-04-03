@@ -21,11 +21,14 @@ const FromTheCeo = () => {
           <p>姜 大成(かん てそん)</p>
         </div>
         <article className={styles.videoarea}>
-          <video
-            src="/images/interview.mp4"
-            controls
-            poster="/images/interview-thumbnail.png"
-          />
+          <a
+            href="https://drive.google.com/file/d/1tWBpUJX9uC6EkE3SxbwPuN96NYsELPJW/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className={styles.arrowImg} src="/images/arrow.svg" alt=">" />
+            <img src="/images/interview-thumbnail.png" alt="" />
+          </a>
         </article>
       </section>
     </section>

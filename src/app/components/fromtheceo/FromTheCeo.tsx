@@ -20,16 +20,18 @@ const FromTheCeo = () => {
           <h3>代表取締役兼CEO</h3>
           <p>姜 大成(かん てそん)</p>
         </div>
-        <article className={styles.videoarea}>
-          <a
-            href="https://drive.google.com/file/d/1tWBpUJX9uC6EkE3SxbwPuN96NYsELPJW/view?usp=drive_link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img className={styles.arrowImg} src="/images/arrow.svg" alt=">" />
-            <img src="/images/interview-thumbnail.png" alt="" />
-          </a>
-        </article>
+        <div className={styles.youtubeContainer}>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/8gYv7qR-OVU?si=HHtxgrxQaWzOcJu7"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </div>
       </section>
     </section>
   )

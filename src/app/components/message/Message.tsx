@@ -108,7 +108,7 @@ const Message = () => {
             <p ref={numRef}>2015</p>
           </div>
           <h2 ref={titleRef} className="secTitle">
-            10年間本当に有難うございました。
+            10年間本当にありがとうございました。
           </h2>
         </div>
         <div className={styles.messageBox}>
@@ -129,7 +129,7 @@ const Message = () => {
             <br />
             積み重ねてきた歴史と誇りを胸に、これからも、
             <br />
-            ビズリンクに関わる全ての方と一緒にたくさんの夢をかなえていきたい。
+            ビズリンクに関わる全ての方と一緒にたくさんの夢を叶えていきましょう。
           </p>
         </div>
       </section>

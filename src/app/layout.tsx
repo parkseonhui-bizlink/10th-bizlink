@@ -5,7 +5,6 @@ import '@/styles/common/common.css'
 import { Noto_Sans_JP } from 'next/font/google'
 import Header from './components/common/Header'
 import Footer from './components/common/Footer'
-import Head from 'next/head'
 
 const noto = Noto_Sans_JP({
   subsets: ['latin'],
@@ -49,9 +48,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <Head>
+      <head>
         <link rel="stylesheet" href="https://use.typekit.net/whe2ynk.css" />
-      </Head>
+      </head>
       <body className={`${noto.className} body`}>
         <Header />
         <main className="main">{children}</main>

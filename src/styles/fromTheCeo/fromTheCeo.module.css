@@ -1,6 +1,16 @@
 .videoarea {
   margin-top: 4rem;
+  width: 100%;
 }
+
+.videoarea video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
 .videoarea img {
   width: 100%;
   height: auto;

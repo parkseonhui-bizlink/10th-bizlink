@@ -7,10 +7,8 @@ const Footer = () => {
     <footer className="footer">
       <article className="footerArticle">
         <div className="footerLinkArea">
-          <p className="footerTitleText">
-            ビズリンクフリーランス
-          </p>
-          <span className='footerTitleSubText'>新しい働き方に導く</span>
+          <p className="footerTitleText">ビズリンクフリーランス</p>
+          <span className="footerTitleSubText">新しい働き方に導く</span>
           <ul className="linkList">
             <li>
               <a href="" target="_blank">
@@ -51,10 +49,8 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footerLinkArea">
-          <p className="footerTitleText">
-            ビズプロ
-          </p>
-          <span className='footerTitleSubText'>専門家副業支援</span>
+          <p className="footerTitleText">ビズリンクプロシェアリング</p>
+          <span className="footerTitleSubText">専門家副業支援</span>
           <ul className="linkList">
             <li>
               <a href="" target="_blank">
@@ -83,10 +79,8 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footerLinkArea">
-          <p className="footerTitleText">
-            ビズキャリ
-          </p>
-          <span className='footerTitleSubText'>成長企業への転職支援</span>
+          <p className="footerTitleText">ビズリンクキャリア</p>
+          <span className="footerTitleSubText">成長企業への転職支援</span>
           <ul className="linkList">
             <li>
               <a href="" target="_blank">
@@ -115,9 +109,8 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footerLinkArea">
-          <p className="footerTitleText">
-            ビズ
-          </p><span className='footerTitleSubText'>就労移行支援</span>
+          <p className="footerTitleText">ビズリンクウェルビーイング</p>
+          <span className="footerTitleSubText">就労移行支援</span>
           <ul className="linkList">
             <li>
               <a href="" target="_blank">

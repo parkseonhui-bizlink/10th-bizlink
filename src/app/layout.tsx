@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: 'Bizlink',
     images: [
       {
-        url: '/opengraph-image.png',
+        url: 'https://10th.bizlink.io/opengraph-image.png',
         width: 1200,
         height: 630,
         alt: 'Bizlink10周年記念ビジュアル',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: 'Bizlink10周年記念サイト',
     description:
       '皆さまの夢と共に、未来へ。IT人材プラットフォーム企業として歩んできた10年。',
-    images: ['/twitter-image.png'],
+    images: ['https://10th.bizlink.io/twitter-image.png'],
   },
 }
 

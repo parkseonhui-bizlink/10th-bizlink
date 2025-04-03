@@ -207,7 +207,7 @@ const Progress = ({
           ease: 'none',
           scrollTrigger: {
             trigger: progressBoxRef.current,
-            start: 'top top',
+            start: 'top+=4000 top',
             end: `+=${totalSteps * window.innerHeight}px`,
             scrub: true,
           },

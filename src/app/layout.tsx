@@ -13,8 +13,9 @@ const noto = Noto_Sans_JP({
 })
 
 export const metadata: Metadata = {
-  title: 'コーポレートサイト',
-  description: 'コーポレートサイト',
+  title: 'Bizlink10周年記念サイト',
+  description:
+    '皆さまの夢と共に、未来へ。私たちの始まりは、間取り5坪の小さなオフィスでした。 そこから10年――。日本初のIT人材プラットフォーム企業として、独自性ある技術を磨きながら刻んできた年月。',
 }
 
 export default function RootLayout({

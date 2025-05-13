@@ -3,18 +3,22 @@ import React, { useEffect, useRef, useState } from 'react'
 import styles from '@/styles/progress/progress.module.css'
 import Image from 'next/image'
 import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const Progress = ({
   activeIndex,
+  spRef,
   ref,
 }: {
   activeIndex: number
   ref?: React.Ref<HTMLDivElement>
+  spRef?: React.Ref<HTMLDivElement>
 }) => {
   const [isClient, setIsClient] = useState(false)
   const progressBoxRef = useRef<HTMLDivElement | null>(null)
   const topGradientRef = useRef(null)
   const bottomGradientRef = useRef(null)
+  const [isSP, setIsSP] = useState(false)
 
   useEffect(() => {
     gsap.to(topGradientRef.current, {
@@ -220,6 +224,47 @@ const Progress = ({
     setIsClient(true)
   }, [])
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSP(window.innerWidth <= 640)
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+  useEffect(() => {
+    if (!isSP || !progressBoxRef.current) return
+
+    const items = progressBoxRef.current.querySelectorAll(
+      `.${styles.progressBox}`
+    )
+
+    items.forEach((item) => {
+      gsap.fromTo(
+        item,
+        { opacity: 0, y: 60 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: item,
+            start: 'top 85%',
+            toggleActions: 'play none none none',
+          },
+        }
+      )
+    })
+
+    setTimeout(() => {
+      gsap.delayedCall(0.1, () => {
+        ScrollTrigger.refresh()
+      })
+    }, 100)
+  }, [isSP])
+
   return (
     <section className={`sec progress ${styles.progress}`} ref={ref}>
       {isClient && (
@@ -238,42 +283,80 @@ const Progress = ({
           <h2 className="secTitle">これまでの軌跡</h2>
         </div>
         <section className={styles.progressArea}>
-          <article
-            className={`progressBox ${styles.progressBox}`}
-            ref={progressBoxRef}
-          >
-            <div className={styles.textarea}>
-              <div className={`progressYear ${styles.progressYear}`}>
-                <p className="bunyan-bold">{years[validIndex]}</p>
-              </div>
-              <div className={`progressBuilding ${styles.progressBuilding}`}>
-                <p className="progressTitle">{titles[validIndex]}</p>
-                <p className="progressSubtitle">{subtitles[validIndex]}</p>
-              </div>
+          {isSP ? (
+            <div ref={progressBoxRef}>
+              {titles.map((title, index) => (
+                <article key={index} className={styles.progressBox}>
+                  <div className={styles.textarea}>
+                    <div className={`progressYear ${styles.progressYear}`}>
+                      <p className="bunyan-bold">{years[index]}</p>
+                    </div>
+                    <div
+                      className={`progressBuilding ${styles.progressBuilding}`}
+                    >
+                      <p className="progressTitle">{title}</p>
+                      <p className="progressSubtitle">{subtitles[index]}</p>
+                    </div>
+                  </div>
+                  <div className={`imgarea ${styles.imgarea}`}>
+                    <figure>
+                      <Image
+                        src={images[index]}
+                        width={296}
+                        height={368}
+                        alt={title}
+                      />
+                    </figure>
+                    <div className={styles.imgareaText}>
+                      <span className="bunyan-regular">{enTitle[index]}</span>
+                      <span></span>
+                      <span className="bunyan-regular">{`0${index + 1}`}</span>
+                    </div>
+                    <div className={styles.bottomText}>
+                      <p className="bunyan-bold">{years[index]}</p>
+                    </div>
+                  </div>
+                </article>
+              ))}
             </div>
-            <div className={styles.progressbar}>
-              <div className={styles.progressbarInner}></div>
-            </div>
-            <div className={`imgarea ${styles.imgarea}`}>
-              <figure>
-                <Image
-                  src={images[validIndex]}
-                  width={296}
-                  height={368}
-                  alt={titles[validIndex]}
-                />
-              </figure>
+          ) : (
+            <article
+              className={`progressBox ${styles.progressBox}`}
+              ref={progressBoxRef}
+            >
+              <div className={styles.textarea}>
+                <div className={`progressYear ${styles.progressYear}`}>
+                  <p className="bunyan-bold">{years[validIndex]}</p>
+                </div>
+                <div className={`progressBuilding ${styles.progressBuilding}`}>
+                  <p className="progressTitle">{titles[validIndex]}</p>
+                  <p className="progressSubtitle">{subtitles[validIndex]}</p>
+                </div>
+              </div>
+              <div className={styles.progressbar}>
+                <div className={styles.progressbarInner}></div>
+              </div>
+              <div className={`imgarea ${styles.imgarea}`}>
+                <figure>
+                  <Image
+                    src={images[validIndex]}
+                    width={296}
+                    height={368}
+                    alt={titles[validIndex]}
+                  />
+                </figure>
 
-              <div className={styles.imgareaText}>
-                <span className="bunyan-regular">{enTitle[validIndex]}</span>
-                <span></span>
-                <span className="bunyan-regular">{`0${validIndex + 1}`}</span>
+                <div className={styles.imgareaText}>
+                  <span className="bunyan-regular">{enTitle[validIndex]}</span>
+                  <span></span>
+                  <span className="bunyan-regular">{`0${validIndex + 1}`}</span>
+                </div>
+                <div className={styles.bottomText}>
+                  <p className="bunyan-bold">{years[validIndex]}</p>
+                </div>
               </div>
-              <div className={styles.bottomText}>
-                <p className="bunyan-bold">{years[validIndex]}</p>
-              </div>
-            </div>
-          </article>
+            </article>
+          )}
         </section>
       </section>
     </section>

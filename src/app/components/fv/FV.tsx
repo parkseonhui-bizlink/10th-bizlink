@@ -9,14 +9,17 @@ const FV = () => {
   const [itemCount, setItemCount] = useState<number | null>(null)
 
   useEffect(() => {
+    const getItemCount = () =>
+      typeof window !== 'undefined' && window.innerWidth <= 768 ? 12 : 16
+    setItemCount(getItemCount())
+
     const handleResize = () => {
-      setItemCount(window.innerWidth <= 768 ? 12 : 16)
+      setItemCount(getItemCount())
     }
-    handleResize()
+
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
   }, [])
-
   useEffect(() => {
     const container = containerRef.current
     if (!container) return

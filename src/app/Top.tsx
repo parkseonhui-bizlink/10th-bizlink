@@ -110,9 +110,10 @@ const Top = () => {
             }
           )
         } else {
-          const spacer = document.createElement('div')
-          spacer.style.height = `${totalSteps * 80}vh`
-          progressContainer.appendChild(spacer)
+          // const spacer = document.createElement('div')
+          // spacer.style.height = `${totalSteps * 80}vh`
+          // progressContainer.appendChild(spacer)
+          return
         }
       }
       if (numbersRef.current) {
@@ -180,7 +181,11 @@ const Top = () => {
       <FV />
       <Message />
       <History ref={historyRef} spRef={historySPRef} />
-      <Progress ref={progressRef} activeIndex={activeIndex} />
+      <Progress
+        ref={progressRef}
+        spRef={historySPRef}
+        activeIndex={activeIndex}
+      />
       <Numbers ref={numbersRef} />
       <FromTheCeo />
     </section>

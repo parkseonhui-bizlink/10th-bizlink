@@ -13,6 +13,7 @@
   flex: 1;
 }
 .sec {
+  overflow-x: hidden;
   padding: 16rem 0 7rem;
   position: relative;
 }

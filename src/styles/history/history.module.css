@@ -26,7 +26,9 @@
 .year2020,
 .year2021,
 .year2022,
-.year2023 {
+.year2023,
+.year2024,
+.year2025 {
   flex-shrink: 0;
 }
 .year2015 {
@@ -45,16 +47,22 @@
   min-width: 50vw;
 }
 .year2020 {
-  min-width: 48vw;
+  min-width: 35vw;
 }
 .year2021 {
-  min-width: 30vw;
+  min-width: 35vw;
 }
 .year2022 {
-  min-width: 48vw;
+  min-width: 25vw;
 }
 .year2023 {
-  min-width: 55vw;
+  min-width: 65vw;
+}
+.year2024 {
+  min-width: 30vw;
+}
+.year2025 {
+  min-width: 50vw;
 }
 .historyArea {
   display: flex;
@@ -191,7 +199,8 @@
   .year2021SP,
   .year2022SP,
   .year2023SP,
-  .year2024SP {
+  .year2024SP,
+  .year2025SP {
     margin-top: 8rem;
   }
 }

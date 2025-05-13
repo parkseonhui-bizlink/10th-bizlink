@@ -1,6 +1,6 @@
 .progress {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 }
 .progressArea {
   margin-top: 4rem;
@@ -128,7 +128,6 @@
 }
 .imgarea figure {
   overflow: hidden;
-  width: 80%;
 }
 .imgarea figure img {
   transition:
@@ -141,6 +140,9 @@
   transform: scale(1.05);
 }
 @media screen and (max-width: 640px) {
+  .progress {
+    min-height: auto;
+  }
   .progressBox {
     flex-direction: column;
   }
@@ -165,11 +167,6 @@
     font-size: min(14vw, 16rem);
   }
 
-  .progress {
-    height: auto;
-    min-height: calc(100vh + 400px);
-    padding: 4rem 0;
-  }
   .progressArea {
     margin-top: 0rem;
   }

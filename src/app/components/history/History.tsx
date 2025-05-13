@@ -68,15 +68,11 @@ const History = ({
                   <p className={styles.month}>
                     4<span>月</span>
                   </p>
-                  <p className={styles.text}>
-                    初月黒字化
-                    <br />
-                    1人目の社員入社
-                  </p>
+                  <p className={styles.text}>創業</p>
                 </div>
                 <img
                   src="/images/section/historySection/2015_1.png"
-                  alt="初月黒字化1人目の社員入社"
+                  alt="創業"
                 />
               </div>
             </div>
@@ -85,17 +81,17 @@ const History = ({
                 <i className={styles.maruten}></i>
                 <div className={styles.textArea}>
                   <p className={styles.month}>
-                    6<span>月</span>
+                    5<span>月</span>
                   </p>
                   <p className={styles.text}>
-                    3ヶ月で
+                    テックファンドファイナリスト
                     <br />
-                    競合企業に転職
+                    選出
                   </p>
                 </div>
                 <img
                   src="/images/section/historySection/2015_3.png"
-                  alt="3ヶ月で競合企業に転職"
+                  alt="テックファンドファイナリスト選出"
                 />
               </div>
             </div>
@@ -141,45 +137,18 @@ const History = ({
                     8<span>月</span>
                   </p>
                   <p className={styles.text}>
-                    IT導入補助金爆発
+                    クラウドファンディング実施
                     <br />
-                    クラウドファンディング爆発
+                    (これまで総額4億円調達)
                   </p>
                 </div>
                 <img
                   src="/images/section/historySection/2017_1.png"
-                  alt="IT導入補助金爆発クラウドファンディング爆発"
+                  alt="クラウドファンディング実施(これまで総額4億円調達)"
                 />
               </div>
             </div>
             <div className={`${styles.historyArea} ${styles.down}`}></div>
-          </div>
-          {/* 2018 */}
-          <div className={`${styles.year2018} panel`}>
-            <figure className={styles.yearImg}>
-              <img src="/images/section/historySection/2018.svg" alt="2018" />
-            </figure>
-            <div className={`${styles.historyArea} ${styles.up}`}></div>
-            <div className={`${styles.historyArea} ${styles.down}`}>
-              <div className={styles.historybox}>
-                <i className={styles.maruten}></i>
-                <div className={styles.textArea}>
-                  <p className={styles.month}>
-                    6<span>月</span>
-                  </p>
-                  <p className={styles.text}>
-                    補助金採択ほぼゼロ
-                    <br />
-                    赤字400万 残金1,000万 <br />
-                    オフィスダウンサイジング
-                  </p>
-                </div>
-                <img
-                  src="/images/section/historySection/2018_1.png"
-                  alt="Bizlink β版ローンチ"
-                />
-              </div>
-            </div>
           </div>
           {/* 2019 */}
           <div className={`${styles.year2019} panel`}>
@@ -191,13 +160,17 @@ const History = ({
                 <i className={styles.maruten}></i>
                 <div className={styles.textArea}>
                   <p className={styles.month}>
-                    4<span>月</span>
+                    3<span>月</span>
                   </p>
-                  <p className={styles.text}>ビズフリに全振り開始</p>
+                  <p className={styles.text}>
+                    堀江取締役
+                    <br />
+                    参画
+                  </p>
                 </div>
                 <img
                   src="/images/section/historySection/2019_2.png"
-                  alt="ビズフリに全振り開始"
+                  alt="堀江取締役参画"
                 />
               </div>
             </div>
@@ -206,13 +179,17 @@ const History = ({
                 <i className={styles.maruten}></i>
                 <div className={styles.textArea}>
                   <p className={styles.month}>
-                    3<span>月</span>
+                    4<span>月</span>
                   </p>
-                  <p className={styles.text}>堀江ジョイン</p>
+                  <p className={styles.text}>
+                    ビズリンクフリーランス
+                    <br />
+                    事業開始
+                  </p>
                 </div>
                 <img
                   src="/images/section/historySection/2019_1.png"
-                  alt="堀江ジョイン"
+                  alt="ビズリンクフリーランス事業開始"
                 />
               </div>
             </div>
@@ -229,28 +206,11 @@ const History = ({
                   <p className={styles.month}>
                     11<span>月</span>
                   </p>
-                  <p className={styles.text}>李ジョイン</p>
+                  <p className={styles.text}>李取締役参画</p>
                 </div>
                 <img
                   src="/images/section/historySection/2020_1.png"
-                  alt="李ジョイン"
-                />
-              </div>
-              <div className={styles.historybox}>
-                <i className={styles.maruten}></i>
-                <div className={styles.textArea}>
-                  <p className={styles.month}>
-                    12<span>月</span>
-                  </p>
-                  <p className={styles.text}>
-                    コロナ融資8,000万円
-                    <br />
-                    クラファン8,000万円
-                  </p>
-                </div>
-                <img
-                  src="/images/section/historySection/2020_2.png"
-                  alt="コロナ融資8,000万円 クラファン8,000万円"
+                  alt="李取締役参画"
                 />
               </div>
             </div>
@@ -268,11 +228,17 @@ const History = ({
                   <p className={styles.month}>
                     8<span>月</span>
                   </p>
-                  <p className={styles.text}>ビズプロ再開</p>
+                  <p className={styles.text}>
+                    ビズリンク
+                    <br />
+                    プロシェアリング事業
+                    <br />
+                    再開
+                  </p>
                 </div>
                 <img
                   src="/images/section/historySection/2021_1.png"
-                  alt="ビズプロ再開"
+                  alt="ビズリクプロシェアリング事業再開"
                 />
               </div>
             </div>
@@ -291,26 +257,14 @@ const History = ({
                     5<span>月</span>
                   </p>
                   <p className={styles.text}>
-                    ビズキャリ開始 <br />
-                    社団設立
+                    株式会社ビズリンクキャリア
+                    <br />
+                    設立
                   </p>
                 </div>
                 <img
                   src="/images/section/historySection/2022_1.png"
-                  alt="ビズキャリ開始社団設立"
-                />
-              </div>
-              <div className={styles.historybox}>
-                <i className={styles.maruten}></i>
-                <div className={styles.textArea}>
-                  <p className={styles.month}>
-                    11<span>月</span>
-                  </p>
-                  <p className={styles.text}>大阪支社設立</p>
-                </div>
-                <img
-                  src="/images/section/historySection/2022_2.png"
-                  alt="大阪支社設立"
+                  alt="株式会社ビズリンクキャリア設立"
                 />
               </div>
             </div>
@@ -326,13 +280,82 @@ const History = ({
                 <i className={styles.maruten}></i>
                 <div className={styles.textArea}>
                   <p className={styles.month}>
-                    8<span>月</span>
+                    11<span>月</span>
                   </p>
-                  <p className={styles.text}>ビズウェル開校</p>
+                  <p className={styles.text}>大阪事業所開設</p>
+                </div>
+                <img
+                  src="/images/section/historySection/2022_2.png"
+                  alt="大阪事業所開設"
+                />
+              </div>
+              <div className={styles.historybox}>
+                <i className={styles.maruten}></i>
+                <div className={styles.textArea}>
+                  <p className={styles.month}>
+                    12<span>月</span>
+                  </p>
+                  <p className={styles.text}>
+                    株式会社ビズリンクウェルビーイング
+                    <br />
+                    設立
+                  </p>
                 </div>
                 <img
                   src="/images/section/historySection/2023_1.png"
                   alt="ビズウェル開校"
+                />
+              </div>
+            </div>
+            <div className={`${styles.historyArea} ${styles.down}`}></div>
+          </div>
+          {/* 2024 */}
+          <div className={`${styles.year2024} panel`}>
+            <figure className={styles.yearImg}>
+              <img src="/images/section/historySection/2024.svg" alt="2024" />
+            </figure>
+            <div className={`${styles.historyArea} ${styles.up}`}>
+              <div className={styles.historybox}>
+                <i className={styles.maruten}></i>
+                <div className={styles.textArea}>
+                  <p className={styles.month}>
+                    4<span>月</span>
+                  </p>
+                  <p className={styles.text}>
+                    IT就労ビズウェル
+                    <br />
+                    新宿校開校
+                  </p>
+                </div>
+                <img
+                  src="/images/section/historySection/2024_1.png"
+                  alt="IT就労ビズウェル新宿校開校"
+                />
+              </div>
+            </div>
+            <div className={`${styles.historyArea} ${styles.down}`}></div>
+          </div>
+          {/* 2025 */}
+          <div className={`${styles.year2025} panel`}>
+            <figure className={styles.yearImg}>
+              <img src="/images/section/historySection/2025.svg" alt="2025" />
+            </figure>
+            <div className={`${styles.historyArea} ${styles.up}`}>
+              <div className={styles.historybox}>
+                <i className={styles.maruten}></i>
+                <div className={styles.textArea}>
+                  <p className={styles.month}>
+                    4<span>月</span>
+                  </p>
+                  <p className={styles.text}>
+                    IT就労ビズウェル
+                    <br />
+                    木場校開校
+                  </p>
+                </div>
+                <img
+                  src="/images/section/historySection/2025_1.png"
+                  alt="IT就労ビズウェル木場校開校"
                 />
               </div>
             </div>
@@ -363,16 +386,12 @@ const History = ({
                   <p className={styles.month}>
                     4<span>月</span>
                   </p>
-                  <p className={styles.text}>
-                    初月黒字化
-                    <br />
-                    1人目の社員入社
-                  </p>
+                  <p className={styles.text}>創業</p>
                 </div>
                 <div className={styles.historyImagBox}>
                   <img
                     src="/images/section/historySection/2015_1.png"
-                    alt="初月黒字化1人目の社員入社"
+                    alt="創業"
                   />
                 </div>
               </div>
@@ -380,18 +399,18 @@ const History = ({
                 <i className={styles.maruten}></i>
                 <div className={styles.textArea}>
                   <p className={styles.month}>
-                    6<span>月</span>
+                    5<span>月</span>
                   </p>
                   <p className={styles.text}>
-                    3ヶ月で
+                    テックファンドファイナリスト
                     <br />
-                    競合企業に転職
+                    選出
                   </p>
                 </div>
                 <div className={styles.historyImagBox}>
                   <img
                     src="/images/section/historySection/2015_3.png"
-                    alt="3ヶ月で競合企業に転職"
+                    alt="テックファンドファイナリスト選出"
                   />
                 </div>
               </div>
@@ -434,41 +453,15 @@ const History = ({
                     8<span>月</span>
                   </p>
                   <p className={styles.text}>
-                    IT導入補助金爆発
+                    クラウドファンディング実施
                     <br />
-                    クラウドファンディング爆発
+                    (これまで総額4億円調達)
                   </p>
                 </div>
                 <div className={styles.historyImagBox}>
                   <img
                     src="/images/section/historySection/2017_1.png"
-                    alt="IT導入補助金爆発クラウドファンディング爆発"
-                  />
-                </div>
-              </div>
-            </div>
-            {/* 2018 */}
-            <div className={styles.year2018SP}>
-              <figure className={styles.yearImg}>
-                <img src="/images/section/historySection/2018.svg" alt="2018" />
-              </figure>
-              <div className={`${styles.historyboxSP} historyboxSP`}>
-                <i className={styles.maruten}></i>
-                <div className={styles.textArea}>
-                  <p className={styles.month}>
-                    6<span>月</span>
-                  </p>
-                  <p className={styles.text}>
-                    補助金採択ほぼゼロ
-                    <br />
-                    赤字400万 残金1,000万 <br />
-                    オフィスダウンサイジング
-                  </p>
-                </div>
-                <div className={styles.historyImagBox}>
-                  <img
-                    src="/images/section/historySection/2018_1.png"
-                    alt="Bizlink β版ローンチ"
+                    alt="クラウドファンディング実施(これまで総額4億円調達)"
                   />
                 </div>
               </div>
@@ -484,12 +477,16 @@ const History = ({
                   <p className={styles.month}>
                     3<span>月</span>
                   </p>
-                  <p className={styles.text}>堀江ジョイン</p>
+                  <p className={styles.text}>
+                    堀江取締役
+                    <br />
+                    参画
+                  </p>
                 </div>
                 <div className={styles.historyImagBox}>
                   <img
                     src="/images/section/historySection/2019_1.png"
-                    alt="堀江ジョイン"
+                    alt="堀江取締役参画"
                   />
                 </div>
               </div>
@@ -499,12 +496,16 @@ const History = ({
                   <p className={styles.month}>
                     4<span>月</span>
                   </p>
-                  <p className={styles.text}>ビズフリに全振り開始</p>
+                  <p className={styles.text}>
+                    ビズリンクフリーランス
+                    <br />
+                    事業開始
+                  </p>
                 </div>
                 <div className={styles.historyImagBox}>
                   <img
                     src="/images/section/historySection/2019_2.png"
-                    alt="ビズフリに全振り開始"
+                    alt="ビズリンクフリーランス事業開始"
                   />
                 </div>
               </div>
@@ -520,31 +521,12 @@ const History = ({
                   <p className={styles.month}>
                     11<span>月</span>
                   </p>
-                  <p className={styles.text}>李ジョイン</p>
+                  <p className={styles.text}>李取締役参画</p>
                 </div>
                 <div className={styles.historyImagBox}>
                   <img
                     src="/images/section/historySection/2020_1.png"
-                    alt="李ジョイン"
-                  />
-                </div>
-              </div>
-              <div className={`${styles.historyboxSP} historyboxSP`}>
-                <i className={styles.maruten}></i>
-                <div className={styles.textArea}>
-                  <p className={styles.month}>
-                    12<span>月</span>
-                  </p>
-                  <p className={styles.text}>
-                    コロナ融資8,000万円
-                    <br />
-                    クラファン8,000万円
-                  </p>
-                </div>
-                <div className={styles.historyImagBox}>
-                  <img
-                    src="/images/section/historySection/2020_2.png"
-                    alt="コロナ融資8,000万円 クラファン8,000万円"
+                    alt="李取締役参画"
                   />
                 </div>
               </div>
@@ -560,12 +542,16 @@ const History = ({
                   <p className={styles.month}>
                     8<span>月</span>
                   </p>
-                  <p className={styles.text}>ビズプロ再開</p>
+                  <p className={styles.text}>
+                    ビズリンク プロシェアリング事業
+                    <br />
+                    再開
+                  </p>
                 </div>
                 <div className={styles.historyImagBox}>
                   <img
                     src="/images/section/historySection/2021_1.png"
-                    alt="ビズプロ再開"
+                    alt="ビズリクプロシェアリング事業再開"
                   />
                 </div>
               </div>
@@ -582,34 +568,21 @@ const History = ({
                     5<span>月</span>
                   </p>
                   <p className={styles.text}>
-                    ビズキャリ開始 <br />
-                    社団設立
+                    株式会社ビズリンクキャリア
+                    <br />
+                    設立
                   </p>
                 </div>
                 <div className={styles.historyImagBox}>
                   <img
                     src="/images/section/historySection/2022_1.png"
-                    alt="ビズキャリ開始社団設立"
-                  />
-                </div>
-              </div>
-              <div className={`${styles.historyboxSP} historyboxSP`}>
-                <i className={styles.maruten}></i>
-                <div className={styles.textArea}>
-                  <p className={styles.month}>
-                    11<span>月</span>
-                  </p>
-                  <p className={styles.text}>大阪支社設立</p>
-                </div>
-                <div className={styles.historyImagBox}>
-                  <img
-                    src="/images/section/historySection/2022_2.png"
-                    alt="大阪支社設立"
+                    alt="株式会社ビズリンクキャリア設立"
                   />
                 </div>
               </div>
             </div>
             {/* 2023 */}
+
             <div className={styles.year2023SP}>
               <figure className={styles.yearImg}>
                 <img src="/images/section/historySection/2023.svg" alt="2023" />
@@ -618,14 +591,66 @@ const History = ({
                 <i className={styles.maruten}></i>
                 <div className={styles.textArea}>
                   <p className={styles.month}>
-                    8<span>月</span>
+                    11<span>月</span>
                   </p>
-                  <p className={styles.text}>ビズウェル開校</p>
+                  <p className={styles.text}>大阪事業所開設</p>
+                </div>
+                <div className={styles.historyImagBox}>
+                  <img
+                    src="/images/section/historySection/2022_2.png"
+                    alt="大阪事業所開設"
+                  />
+                </div>
+              </div>
+
+              <div className={`${styles.historyboxSP} historyboxSP`}>
+                <i className={styles.maruten}></i>
+                <div className={styles.textArea}>
+                  <p className={styles.month}>
+                    12<span>月</span>
+                  </p>
+                  <p className={styles.text}>
+                    株式会社ビズリンクウェルビーイング設立
+                  </p>
                 </div>
                 <div className={styles.historyImagBox}>
                   <img
                     src="/images/section/historySection/2023_1.png"
-                    alt="ビズウェル開校"
+                    alt="株式会社ビズリンクウェルビーイング設立"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className={styles.year2024SP}>
+              <div className={`${styles.historyboxSP} historyboxSP`}>
+                <i className={styles.maruten}></i>
+                <div className={styles.textArea}>
+                  <p className={styles.month}>
+                    4<span>月</span>
+                  </p>
+                  <p className={styles.text}>IT就労ビズウェル新宿校開校</p>
+                </div>
+                <div className={styles.historyImagBox}>
+                  <img
+                    src="/images/section/historySection/2024_1.png"
+                    alt="IT就労ビズウェル新宿校開校"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className={styles.year2025SP}>
+              <div className={`${styles.historyboxSP} historyboxSP`}>
+                <i className={styles.maruten}></i>
+                <div className={styles.textArea}>
+                  <p className={styles.month}>
+                    4<span>月</span>
+                  </p>
+                  <p className={styles.text}>IT就労ビズウェル木場校開校</p>
+                </div>
+                <div className={styles.historyImagBox}>
+                  <img
+                    src="/images/section/historySection/2025_1.png"
+                    alt="IT就労ビズウェル木場校開校"
                   />
                 </div>
               </div>

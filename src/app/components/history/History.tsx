@@ -169,7 +169,7 @@ const History = ({
                   </p>
                 </div>
                 <img
-                  src="/images/section/historySection/2019_2.png"
+                  src="/images/section/historySection/2019_1.png"
                   alt="堀江取締役参画"
                 />
               </div>
@@ -188,7 +188,7 @@ const History = ({
                   </p>
                 </div>
                 <img
-                  src="/images/section/historySection/2019_1.png"
+                  src="/images/section/historySection/2019_2.png"
                   alt="ビズリンクフリーランス事業開始"
                 />
               </div>

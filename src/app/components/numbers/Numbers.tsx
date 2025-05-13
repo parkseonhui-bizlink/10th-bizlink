@@ -24,7 +24,7 @@ const avgAgedata = [
 
 gsap.registerPlugin(ScrollTrigger)
 
-const Numbers = ({ ref }: { ref?: React.Ref<HTMLDivElement> }) => {
+const Numbers = () => {
   const [isClient, setIsClient] = useState(false)
 
   const [animated, setAnimated] = useState(false)
@@ -166,6 +166,60 @@ const Numbers = ({ ref }: { ref?: React.Ref<HTMLDivElement> }) => {
   }, [])
 
   useEffect(() => {
+    if (!isClient) return
+    const bars = document.querySelectorAll('.barWrapper .bar')
+
+    bars.forEach((bar) => {
+      const height = bar.getAttribute('data-height') || '0'
+      gsap.fromTo(
+        bar,
+        { height: '0%' },
+        {
+          height: `${height}%`,
+          duration: 1.5,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: bar,
+            start: 'top 85%',
+            once: true,
+          },
+        }
+      )
+    })
+    const targets = document.querySelectorAll('.animated-number')
+
+    targets.forEach((el) => {
+      const value = parseFloat(el.getAttribute('data-value') || '0')
+      const obj = { progress: 0 }
+
+      gsap.to(obj, {
+        progress: value,
+        duration: 2,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: el,
+          start: 'top 85%',
+          once: true,
+          markers: false,
+        },
+        onUpdate: () => {
+          el.textContent =
+            value % 1 === 0
+              ? Math.round(obj.progress).toString()
+              : obj.progress.toFixed(1)
+        },
+        onComplete: () => {
+          el.textContent = value.toString()
+        },
+      })
+    })
+
+    return () => {
+      ScrollTrigger.getAll().forEach((t) => t.kill())
+    }
+  }, [isClient])
+
+  useEffect(() => {
     setAnimated(true)
   }, [])
   useEffect(() => {
@@ -173,7 +227,7 @@ const Numbers = ({ ref }: { ref?: React.Ref<HTMLDivElement> }) => {
   }, [])
 
   return (
-    <section ref={ref} className="sec number blue">
+    <section className="sec number blue">
       {isClient && (
         <div className="bubblesContainer">{generateBubbles(40)}</div>
       )}

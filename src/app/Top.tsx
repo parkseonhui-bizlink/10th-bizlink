@@ -186,7 +186,7 @@ const Top = () => {
         spRef={historySPRef}
         activeIndex={activeIndex}
       />
-      <Numbers ref={numbersRef} />
+      <Numbers />
       <FromTheCeo />
     </section>
   )

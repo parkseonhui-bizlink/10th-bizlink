@@ -236,10 +236,10 @@ const Numbers = () => {
       <section className="secInner">
         <div className="titleArea">
           <Image
-            src="/images/section/NEMBER.svg"
+            src="/images/section/NUMBER.svg"
             width={609}
             height={155}
-            alt="NEMBER"
+            alt="NUMBER"
           />
           <h2 className="secTitle">数字でみるビズリンク</h2>
         </div>

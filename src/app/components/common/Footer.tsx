@@ -36,7 +36,7 @@ const Footer = () => {
             </li>
             <li>
               <a href="" target="_blank">
-                友たちキャンペーン
+                友だちキャンペーン
                 <Image
                   className="arrow"
                   src="/images/footer_arrow.svg"

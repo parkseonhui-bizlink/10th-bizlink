@@ -204,7 +204,7 @@ const History = ({
                 <i className={styles.maruten}></i>
                 <div className={styles.textArea}>
                   <p className={styles.month}>
-                    11<span>月</span>
+                    5<span>月</span>
                   </p>
                   <p className={styles.text}>李取締役参画</p>
                 </div>
@@ -519,7 +519,7 @@ const History = ({
                 <i className={styles.maruten}></i>
                 <div className={styles.textArea}>
                   <p className={styles.month}>
-                    11<span>月</span>
+                    5<span>月</span>
                   </p>
                   <p className={styles.text}>李取締役参画</p>
                 </div>
